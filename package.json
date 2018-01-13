@@ -1,0 +1,20 @@
+{
+	"name": "@iepaas/model",
+	"version": "0.0.1-dev.3",
+	"description": "The object model behind iepaas",
+	"main": "index.js",
+	"scripts": {
+		"test": "tsc",
+		"build:index": "node scripts/buildIndex.js",
+		"build:tsc": "tsc",
+		"build": "npm run build:index && npm run build:tsc",
+		"reformat": "prettier --write \"**/*.ts\""
+	},
+	"author": "Pablo Rodríguez <pabloviolin8@gmail.com>",
+	"license": "Apache-2.0",
+	"devDependencies": {
+		"@types/node": "^8.0.53",
+		"prettier": "^1.8.2",
+		"typescript": "^2.6.1"
+	}
+}
