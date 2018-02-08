@@ -20,4 +20,8 @@ export class Build extends Entity {
 			date: this.date.getTime()
 		}
 	}
+
+	public static deserialize(data: any): Build {
+		return new Build(data.id, data.commit, data.snapshot, new Date(data.date))
+	}
 }
